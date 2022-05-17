@@ -2,11 +2,13 @@
 
 [English](./README.md) | 中文
 
-Vendor Vesion 是一个 `Webpack5` 插件，可以在编译后的代码上插入一段注释，用于记录当前依赖第三方库的版本号信息。比如：
+Vendor Vesion 是一个 `Webpack5` 插件，可以在编译后的代码上插入一段注释，用于记录当前依赖第三方库的版本号信息。
+
+例如：
 
 ```javascript
 /**  build at 2022-05-17 14:57:45 ,  version info : {"react":"16.8.0","lodash":"4.17.21"} */
-... 你的代码
+// ... 你的代码
 ```
 
 ## 安装
