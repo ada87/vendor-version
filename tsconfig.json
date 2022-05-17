@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": false,
+        "moduleResolution": "node",
+        "module": "None",
+        "target": "esnext",
+        "lib": [
+            "ESNext"
+        ],
+        "declaration": true,
+        "sourceMap": false,
+        "downlevelIteration": true,
+        "allowSyntheticDefaultImports": true,
+        "noEmitOnError": true,
+        "baseUrl": "./"
+    }
+}
