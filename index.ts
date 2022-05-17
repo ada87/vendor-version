@@ -47,7 +47,6 @@ export = class {
     comment = '';
 
     constructor(options?: VerdorVersionPluginOpts) {
-
         if (typeof options == 'object') {
             if (options.footer) {
                 this.footer = true;
@@ -104,14 +103,11 @@ export = class {
                 return;
             }
             for (const chunk of compilation.chunks) {
-                if (!chunk.canBeInitial()) {
-                    continue;
-                }
+                if (!chunk.canBeInitial()) continue;
                 for (const file of chunk.files) {
-                    console.log(file);
                     compilation.updateAsset(file, old => {
                         let cached = cache.get(old);
-                        if (!cached) {
+                        if (!cached || cached.comment !== this.comment) {
                             const source = this.footer ? new ConcatSource(old, "\n", this.comment) : new ConcatSource(this.comment, "\n", old);
                             cache.set(old, { source, comment: this.comment });
                             return source;
