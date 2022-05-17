@@ -7,8 +7,8 @@ Vendor Vesion is a plugin for `webpack5`, shows dependencies version info by ins
 Such as:
 
 ```javascript
-/**  build at 2022-05-17 14:57:45 ,  version info : {"react":"16.8.0","lodash":"4.17.21"} */
-// ... you code here
+/**  Your Name build at 2022-05-17 14:57:45 ,  version info : {"react":"16.8.0","lodash":"4.17.21"} */
+// ... you compiled code here
 ```
 
 ## Install
@@ -19,8 +19,9 @@ npm install --save-dev verdor-version
 
 ## Usage
 
+edit your `webpack.config.js` file ：
+
 ```javascript
-// webpack.config.js
 const VerdorVersionPlugin = require('verdor-version');
 
 module.exports = {
