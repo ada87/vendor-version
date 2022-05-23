@@ -116,7 +116,7 @@ export = class {
         let isPro = compiler.options.mode == 'production';
         let comment = '';
         if (isPro) {
-            comment = `;let ${this.variable}=${JSON.stringify({ b: this.comment, v: this.version })};`
+            comment = `;var ${this.variable}=${JSON.stringify({ b: this.comment, v: this.version })};`
         } else {
             comment = `/** ${this.comment} , version info: ${JSON.stringify(this.version)}*/`
         }
