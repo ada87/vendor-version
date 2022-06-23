@@ -3,7 +3,7 @@
         "noImplicitAny": false,
         "moduleResolution": "node",
         "module": "None",
-        "target": "esnext",
+        "target": "es6",
         "lib": [
             "ESNext"
         ],

@@ -1,6 +1,6 @@
 {
   "name": "vendor-version",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Vendor Vesion is a plugin for webpack5, shows dependencies version info by insert a comment in your code. ",
   "main": "index.js",
   "keywords": [
